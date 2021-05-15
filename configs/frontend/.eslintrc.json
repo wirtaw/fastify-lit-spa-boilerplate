@@ -1,0 +1,6 @@
+{
+  "extends": ["@open-wc/eslint-config", "eslint-config-prettier"],
+  "rules": {
+    "max-len": [2, 120, 8]
+  }
+}

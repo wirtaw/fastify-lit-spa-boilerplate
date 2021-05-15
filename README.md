@@ -1,21 +1,23 @@
 ## Fastify + Lit + Rollup Boilerplate
 
-### Prepare project 
+### Application
+
+#### Prepare project 
 
 * clone this repo 
 * copy `.env.exaple` and name to `.env`
 
-### Run: 
+#### Run application: 
 
-`npm run start` or `yarn start`
+Run `npm run start` or `yarn start`
 
-### Dev:
+### Frontend
 
-`npm run dev` or `yarn dev`
+Frontend project is placed in `app/website` directory
 
-### Start on production
+#### Dev:
 
-`npm run serve` or `yarn serve`
+Run `npm run start:watch` `yarn start:watch`
 
 
 

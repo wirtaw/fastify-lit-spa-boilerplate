@@ -5,19 +5,40 @@
   "main": "index.js",
   "scripts": {
     "server": "NODE_ENV=production node -r dotenv/config app/server/index.js",
-    "server:dev": "NODE_ENV=development node -r dotenv/config app/server/index.js",
-    "lint": "eslint --ignore-path .gitignore .",
-    "lint:fix": "eslint --ignore-path .gitignore . --fix"
+    "lint:back": "eslint --config configs/backend/.eslintrc.json --ext .js ./app/server --ignore-path .gitignore && prettier \"app/server/**/*.js\" --check --ignore-path .gitignore",
+    "lint:back:fix": "eslint --config configs/backend/.eslintrc.json --ignore-path .gitignore ./app/server --fix",
+    "lint:front": "eslint --config configs/frontend/.eslintrc.json --ext .js,.html ./app/website --ignore-path .gitignore && prettier \"app/website/**/*.js\" --check --ignore-path .gitignore",
+    "lint:front:fix": "eslint --config configs/frontend/.eslintrc.json --ignore-path .gitignore ./app/website --fix",
+    "lint": "lint:back && lint:front",
+    "lint:fix": "lint:back:fix && lint:front:fix",
+    "format": "eslint --ext .js,.html . --fix --ignore-path .gitignore && prettier \"app/**/*.js\" --write --ignore-path .gitignore",
+    "test": "web-test-runner --coverage",
+    "test:watch": "web-test-runner --watch",
+    "build": "rimraf dist && rollup -c rollup.config.js",
+    "start": "npm run build && npm run server",
+    "start:watch": "web-dev-server --root-dir app/website --app-index build/index.html --node-resolve --watch --open"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@open-wc/building-rollup": "^1.10.0",
+    "@open-wc/dev-server-hmr": "^0.1.2-next.0",
+    "@open-wc/eslint-config": "^4.3.0",
+    "@open-wc/testing": "^2.5.33",
+    "@web/test-runner": "^0.12.20",
+    "deepmerge": "^4.2.2",
+    "es-dev-server": "^2.1.0",
     "eslint": "^7.26.0",
-    "eslint-config-loopback": "^13.1.0"
+    "eslint-config-loopback": "^13.1.0",
+    "eslint-config-prettier": "^7.2.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.48.0"
   },
   "dependencies": {
     "dotenv": "^9.0.2",
-    "fastify": "^3.15.1"
+    "fastify": "^3.15.1",
+    "fastify-static": "^4.0.1",
+    "lit": "2.0.0-rc.2"
   }
 }

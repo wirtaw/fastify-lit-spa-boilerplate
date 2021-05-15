@@ -1,14 +1,14 @@
-'use strict';
+
 
 const fastify = require('fastify')({
   logger: true,
 });
+const path = require('path');
 
-const configs = require('../../config');
+const configs = require('../../config.js');
 
-// eslint-ignore
-fastify.get('/', async (request, reply) => {
-  return {hello: 'world'};
+fastify.register(require('fastify-static'), {
+  root: path.join(__dirname, '../../dist'),
 });
 
 const start = async () => {
