@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "NODE_ENV=production node -r dotenv/config src/server.js",
-    "server:dev": "NODE_ENV=development node -r dotenv/config src/server.js",
+    "server": "NODE_ENV=production node -r dotenv/config app/server/index.js",
+    "server:dev": "NODE_ENV=development node -r dotenv/config app/server/index.js",
     "lint": "eslint --ignore-path .gitignore .",
     "lint:fix": "eslint --ignore-path .gitignore . --fix"
   },

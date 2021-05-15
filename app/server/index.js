@@ -4,7 +4,7 @@ const fastify = require('fastify')({
   logger: true,
 });
 
-const configs = require('../config');
+const configs = require('../../config');
 
 // eslint-ignore
 fastify.get('/', async (request, reply) => {
