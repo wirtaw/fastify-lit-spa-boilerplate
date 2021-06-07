@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "server": "NODE_ENV=production node -r dotenv/config app/server/index.js",
+    "server:dev": "NODE_ENV=production node -r dotenv/config --inspect-brk app/server/index.js",
     "lint:back": "eslint --config configs/backend/.eslintrc.json --ext .js ./app/server --ignore-path .gitignore && prettier \"app/server/**/*.js\" --check --ignore-path .gitignore",
     "lint:back:fix": "eslint --config configs/backend/.eslintrc.json --ignore-path .gitignore ./app/server --fix",
     "lint:front": "eslint --config configs/frontend/.eslintrc.json --ext .js,.html ./app/website --ignore-path .gitignore && prettier \"app/website/**/*.js\" --check --ignore-path .gitignore",

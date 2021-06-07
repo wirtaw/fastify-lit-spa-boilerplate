@@ -2,9 +2,6 @@ import merge from 'deepmerge';
 // use createSpaConfig for bundling a Single Page App
 import { createSpaConfig } from '@open-wc/building-rollup';
 
-// use createBasicConfig to do regular JS to JS bundling
-// import { createBasicConfig } from '@open-wc/building-rollup';
-
 const baseConfig = createSpaConfig({
   // use the outputdir option to modify where files are output
   // outputDir: 'dist',
