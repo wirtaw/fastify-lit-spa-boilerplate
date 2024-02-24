@@ -18,9 +18,7 @@ export class MainSpa extends LitElement {
 
   firstUpdated(){
     fetch('/v1/user')
-      .then((res) => {
-        return res.json();
-      })
+      .then((res) => res.json())
       .then((res) => {
         this.user = res;
       });
