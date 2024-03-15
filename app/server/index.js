@@ -1,10 +1,8 @@
-
-
 const fastify = require('fastify')({
   logger: true,
 });
 const path = require('path');
-const router = require('./routes/v1/users');
+const router = require('./routes/v1/users.js');
 
 const configs = require('../../config.js');
 

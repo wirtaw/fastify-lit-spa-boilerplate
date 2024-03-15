@@ -1,6 +1,6 @@
-const { handler_v1 } = require('../../handlers/user_handler_v1');
+const { handlerV1 } = require('../../handlers/user_handler_v1.js');
 
 module.exports = function (fastify, opts, done) {
-  fastify.get('/user', handler_v1);
+  fastify.get('/user', handlerV1);
   done();
 };

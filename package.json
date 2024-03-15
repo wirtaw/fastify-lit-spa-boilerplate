@@ -23,23 +23,23 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@open-wc/building-rollup": "^1.10.0",
-    "@open-wc/dev-server-hmr": "^0.1.2-next.0",
+    "@open-wc/building-rollup": "^3.0.2",
+    "@open-wc/dev-server-hmr": "^0.1.4",
     "@open-wc/eslint-config": "^4.3.0",
-    "@open-wc/testing": "^2.5.33",
+    "@open-wc/testing": "^4.0.0",
     "@web/test-runner": "^0.12.20",
-    "deepmerge": "^4.2.2",
-    "es-dev-server": "^2.1.0",
-    "eslint": "^7.26.0",
+    "deepmerge": "^4.3.1",
+    "es-dev-server": "^1.55.1",
+    "eslint": "^7.32.0",
     "eslint-config-loopback": "^13.1.0",
     "eslint-config-prettier": "^7.2.0",
     "rimraf": "^3.0.2",
-    "rollup": "^2.48.0"
+    "rollup": "^2.79.1"
   },
   "dependencies": {
     "dotenv": "^9.0.2",
-    "fastify": "^3.15.1",
-    "fastify-static": "^4.0.1",
-    "lit": "2.0.0-rc.2"
+    "fastify": "^3.29.5",
+    "fastify-static": "^4.7.0",
+    "lit": "^3.1.2"
   }
 }
