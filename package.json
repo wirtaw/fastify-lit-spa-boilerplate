@@ -27,14 +27,14 @@
     "@open-wc/dev-server-hmr": "^0.1.4",
     "@open-wc/eslint-config": "^4.3.0",
     "@open-wc/testing": "^4.0.0",
-    "@web/test-runner": "^0.12.20",
+    "@web/test-runner": "^0.18.2",
     "deepmerge": "^4.3.1",
     "es-dev-server": "^1.55.1",
     "eslint": "^7.32.0",
     "eslint-config-loopback": "^13.1.0",
     "eslint-config-prettier": "^7.2.0",
     "rimraf": "^3.0.2",
-    "rollup": "^2.79.1"
+    "rollup": "^4.0.0"
   },
   "dependencies": {
     "dotenv": "^9.0.2",
