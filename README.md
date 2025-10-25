@@ -1,4 +1,4 @@
-# Fastify + Lit + Rollup Boilerplate**
+# Fastify + Lit + Rollup Boilerplate
 
 A fast and efficient foundation for building web applications using
 
