@@ -1,6 +1,7 @@
 # Fastify + Lit + Rollup Boilerplate**
 
 A fast and efficient foundation for building web applications using
+
 * **Fastify:** A high-performance Node.js web framework for efficiency.
 * **Lit:** A lightweight library from Google for building reactive web components.
 * **Rollup:** Powerful JavaScript module bundler for optimized production builds.
@@ -58,7 +59,7 @@ This boilerplate welcomes contributions and improvements. Feel free to:
 * Submit pull requests with enhancements and fixes.
 
 ## Let's build amazing web experiences together!
- 
+
 ## Additional Notes
 
 * Consider adding instructions for TypeScript setup if you provide support for it.
@@ -67,4 +68,6 @@ This boilerplate welcomes contributions and improvements. Feel free to:
 
 Let me know if you'd like any modifications or specific areas you'd like highlighted in the README! 
 
+## Need to improve
 
+* Update rollup configuration

@@ -34,7 +34,7 @@
     "eslint-config-loopback": "^13.1.0",
     "eslint-config-prettier": "^7.2.0",
     "rimraf": "^3.0.2",
-    "rollup": "^4.0.0"
+    "rollup": "^3.0.0"
   },
   "dependencies": {
     "dotenv": "^9.0.2",
