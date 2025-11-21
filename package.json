@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "server": "NODE_ENV=production node -r dotenv/config app/server/index.js",
     "server:dev": "NODE_ENV=production node -r dotenv/config --inspect-brk app/server/index.js",
@@ -20,8 +21,8 @@
     "start:watch": "web-dev-server --root-dir app/website --app-index build/index.html --node-resolve --watch --open"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Vladimir Poplavskij <float45@gmail.com> (https://wirtaw.github.io/)",
+  "license": "MIT",
   "devDependencies": {
     "@open-wc/building-rollup": "^3.0.2",
     "@open-wc/dev-server-hmr": "^0.1.4",
